@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan | JS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <div>
+        <h1>this page is going to include a lot of the funny coffee coding!</h1>
+    </div>
+    <div>
+        <h2> I'm sorry for all the alerts</h2>
+        <p><a href="http://www.bing.com" target="_blank" onclick="alert('warning! By doing this you are leaving the website, once you leave your alert score will be reset'); alert('are you sure'); alert('are you sure you sure');alert('wait wait, are you sure, because if you leave it\'s not going to open something like google it\'s going to be something wierd that nobody uses like bing?');alert('wow you\'re really ok with using bing you must be a really messed up person to use bing of all things.')">leave site</a></p>
+    </div>
+
+    <script> 
+        alert('hey there, just popping in to ask for a good grade (☞ﾟヮﾟ)☞')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('click ok to continue')
+        alert('congradulations on making it to 50 alerts\nas a reward I will let you pass!\n (╯°□°）╯︵ ┻━┻\n *the path forward is now cleared')
+    </script>
+    <p>CLICK BELOW OR SUFFER THE CONSIQUENCES</p>
+    <button onclick="document.getElementById('add').innerHTML=('1.you 2.can\'t 3.escape 4.your 5.fate')" >5 simple ways you might not be aware of to avoid the terrible fate that awaits you in the near future</button>
+    <p id="add"></p>
+
+    <h2>down bellow check how long you have been in this nighmare of a website</h2>
+    <button onclick="document.getElementById('date').innerHTML=Date()">click here to display the clock</button>
+    <p id="date"></p>
+
+    <h2>THESE WORDS AND PHRASES ARE NOT WHHAAT THEY SEEM BE WIERY FOR THEY ARE MALLICIOUSE IN NAtURE</h2>
+    <button onclick="document.getElementById('change-text').innerHTML=('I LIED THIS TEXT DOES CHANGE AHahAHahaHAhAHa!')">click here TO REVEAL THE LIES THAT HAVE BEEN SET JUST BELLOW THIS TEXT!!</button>
+    <p id="change-text">this text won't change when you click on it</p>
+    
+    <h2>WHAT YOU PUT INTO THIS MAGIC SCOURCERY WILL NOT COME OUT THE SAME! THIS SCOURCERY IS CALLED "functions..."</h2>
+    <button onclick="pFun()">click here to activate the magic rrrrutual</button>
+    <p id="p-fun"></p>
+
+    <script>
+        function askName(){
+            var nameReturn = document.getElementById('ask-name');
+            var name = prompt('STATE YOUR NAME SO THE RITUAL CAN BE COMPLETED' , 'HERE');
+            if (name == '') {
+                alert('YOUR NAME HAS PROVEN  INSUFFICIENT');
+            } else {
+                nameReturn.innerHTML = 'Hello ' + name + '! Nice to meet you!';
+            }
+        }
+        
+        function pFun() {
+            var p = document.getElementById('p-fun');
+            p.innerHTML = 'THE RITUAL HAS BEEN INNITIATED!!!!';
+            p.style.color = 'red';
+        }
+    
+        </script>
+        <div>
+            <h2>STATE YOUR NAME PUNY MORTAL</h2>
+            <button onclick="askName()">SPEAK HERE!</button>
+            <p id="ask-name"></p>
+
+            <h2>how do we ask questions with external js</h2>
+            <button onclick="askQuestion()">click here</button>
+            <p id="question"></p>
+
+            <h2>image apear</h2>
+            <button onclick="showImage()">click for an image</button>
+            <img id="button" src="" width="10px;">
+
+            <h2>this is a fancy button</h2>
+            <button class="buton">click me</button>
+
+            
+           
+
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan | choose your own adventure</title>
+</head>
+<body>
+    <script>
+    function playgame() {
+    var enterGame = confirm('do you want to start?');
+    alert(enterGame);
+    if (enterGame == true) {
+        
+        alert("game start up...");
+
+        var choice1 = prompt('You wake up chained to the wall you are in a wooden cabin… you look around and notice a screwdriver on the ground that fell off of a nearby rack of rusty tools\n a.pick up screw driver b.scream c.do nothing');
+        if (choice1 == 'pick up screw driver') {
+            alert("A person comes into the dark room thier face cloaked by the shaddows… he comes close to your face…");
+            var choice2 = prompt("a.do nothing b.attack c.scream");
+            if (choice2 == 'do nothing') {
+                alert('The figure smirks as you sink into The darkness… that is the last Thing you see');
+                playAgain();
+            } else if (choice2 == 'attack') {
+                alert("You swing at the man but you miss… he staggers back and you manage to break free from the rusty chains, you run past the figure that once loomed over you catching a brief glimpse of it’s face that reflects your own and as you burst through the cabin door you find nothing, you look back to see where the cabin once stood to find that it's gone. Finaly you realize there is no cabin and there is no dark figure  Because your alone, you always were and will be alone, this is you.");
+                
+                var choice3 = prompt("did you win\n a.yes b.no");
+                if (choice3	== 'yes') {
+                    alert("you are trapped here in nothingness forever... this is what you want");
+                } else if (choice3 == 'no') {
+                    alert("you feel empty inside, this is not what you wanted... all you can do is lie in sorrow");
+                } else if (choice3 == 'I will make my own path') {
+                    alert("with out something to compare yourself to you lose all meaning and sense of self so you decide that you want to create a vertical line behind you... while this new axis is limited you, you can now walk... you realize that in nothingness you lose your sense of self while in the complexities of life you feel shackled by the limitations that have been set... you now have come to the realization that what you want, and what you need is to create a balance. after all you are the one that is in control now you can do anything you want... you are free");
+                    var specialMessage = prompt("do you want to remember\n yes or no");
+                    if (specialMessage == 'yes') {
+                    alert("you open your eyes and smile");
+                    } else {
+                        alert("you ruined the ending");
+                        playAgain();
+                    }
+                } else { alert('this is either a typo or you just want to find the secret ending'); 
+                    alert("if so, you're not quite there yet if you want to find it");
+                    var hint = prompt("do you want a hint\n yes or no");
+                    if (hint == 'yes') {
+                        alert("the hint is to remember");
+
+                    } else {
+                        playAgain();
+                    }
+                }
+
+                }
+            } else {
+                alert("error:unknown_var");
+                playAgain()
+            }
+
+        } else if (enterGame == false) {
+            //this may break the game --v
+            alert("You choose not to confront your problems and fear, you should probably go to therapy")
+        } if (choice1 == 'scream') {
+            alert("error:unknown_var");
+            playAgain();
+        } else if (choice1 == 'choice1-c') {
+            alert("The shadows consume you, the last thing you see is the grin of a face that you recognize but can't recall");
+            playAgain();
+        } else {
+       playAgain();
+        } 
+        
+        var playAgain = confirm("do you want to forget?");
+        if(playAgain == true) {
+            playgame();
+        } else {
+            alert("I will make my own path")
+        }
+    }
+        playgame();
+
+        
+
+    </script>   
+</body>
+</html>

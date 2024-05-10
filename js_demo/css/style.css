@@ -1,0 +1,16 @@
+body {
+    background-color: beige;
+    onclick
+}
+
+.buton {
+    cursor: pointer;
+    
+
+}
+
+.buton:hover {background-color: #3e8e41}
+
+.buton:active {
+    transform: translateY(4px);
+}
