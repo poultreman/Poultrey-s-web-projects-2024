@@ -1,0 +1,72 @@
+body {
+    background-color: darkgrey;
+}
+
+.container {
+    width: 700px;
+    margin-left: 25%;
+    border: 3px double rgb(7, 7, 78);
+    background-color: rgba(219, 219, 211, 0.847);
+    padding: 5px;
+    position: fixed;
+    align-items: center;
+    margin-top: auto;
+    
+}
+
+
+
+.nav {
+    list-style: none;
+    text-align: center;
+}
+.nav li {
+    display:inline;
+    margin-right: 20px;
+}
+
+.nav a {
+    font-family: 'Lucida Handwriting';
+    color: black;
+    text-decoration: none;
+    
+}
+
+.intrests {
+    background-color:rgb(219, 219, 211);
+    padding: 10px;
+    max-width:fit-content;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 3px double rgb(7, 7, 78);
+    
+}
+
+#span-1 {
+      color: rgb(236, 139, 71);
+}
+
+#span-2 {
+    color: rgb(236, 139, 71);
+}
+
+.button {
+    background-color: white;
+    font-family: 'Noto Serif Japanese' ;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius:20px;
+}
+
+.button:hover {
+    background-color: orange;
+    font-family:  'Noto Serif Japanese';
+    font-size: 27px;
+    
+}
+
+.button:active {
+    transform:translateY(2px);
+}
+
+
